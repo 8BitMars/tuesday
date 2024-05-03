@@ -20,9 +20,9 @@ Welcome to Tuesday! The ToDo App (inspiration drawn from Monday).
 
 See screenshots of the app and how it works below!
 
-![Sign Up](./app-screenshots/sign-up-screen.png)
-![Login](./app-screenshots/login-screen.png)
-![Home/Project Page](./app-screenshots/project-page.png)
-![Board Page](./app-screenshots/board-page-showing-sidebar.png)
-![Tasks Page](./app-screenshots/tasks-page.png)
+![Sign Up](frontend/src/images/app-screenshots/app-screenshots/sign-up-screen.png)
+![Login](frontend/src/images/app-screenshots/app-screenshots/login-screen.png)
+![Home/Project Page](frontend/src/images/app-screenshots/app-screenshots/project-page.png)
+![Board Page](frontend/src/images/app-screenshots/app-screenshots/board-page-showing-sidebar.png)
+![Tasks Page](frontend/src/images/app-screenshots/app-screenshots/tasks-page.png)
 
