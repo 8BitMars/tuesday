@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getCookie } from "../hooks/auth/useAuth";
 import { Task, FormatedTask, Project, Board } from "../data/types";
-axios.defaults.baseURL = "http://localhost:6868";
+axios.defaults.baseURL = "https://www.tuesdaytask.com/api";
 
 axios.interceptors.request.use((config) => {
   const token = getCookie("tuesday");

@@ -19,6 +19,12 @@ if (JWT_SECRET === undefined) {
 app.use(express.json());
 app.use(cors());
 
+app.use(
+  cors({
+    origin: ["https://www.tuesdaytask.com", "http://localhost:3000"],
+  })
+);
+
 // ########## START DATABASE ########## //
 const db = mysql.createConnection({
   host: "database-1.cxackak4i601.us-east-2.rds.amazonaws.com",
@@ -344,12 +350,6 @@ app.delete("/task/:id", authenticateToken, (req, res) => {
 // ########## START NOTE ########## //
 // ########## END NOTE ########## //
 
-// app.listen(port, () => {
-//   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-// });
-
 const listener = app.listen(port, () => {
-  console.log(
-    `⚡️[server]: Server is running` + listener.address() + `:${port}`
-  );
+  console.log(`⚡️[server]: Server is running on port ${port}`);
 });
